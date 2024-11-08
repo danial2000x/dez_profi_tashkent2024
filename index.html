@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dez Profi Tashkent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Dez Profi Tashkent</h1>
+        <div class="burger-menu" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav>
+            <ul class="menu" id="menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#articles">Статьи</a></li>
+                <li><a href="#office-location">Наш офис</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+      
+
+<!-- Кнопка звонка -->
+<div class="call-button" onclick="openPhoneModal()">
+    <i class="fa fa-phone"></i>
+</div>
+
+<!-- Онлайн-консультант -->
+<div class="online-consultant">
+    <div class="consultant-info">
+        <p>Есть вопросы? Напишите нашему онлайн-консультанту!</p>
+        <button id="chatButton" onclick="openChat()">Начать чат</button>
+    </div>
+</div>
+
+<!-- Модальное окно с номером телефона -->
+<div id="phoneModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closePhoneModal()">&times;</span>
+        <p>Наш номер телефона:</p>
+        <a href="tel:+998900000000">+998 93 411 21 52</a>
+    </div>
+</div>
+
+<section id="home">
+    <div class="content-wrapper">
+        <h2>Добро пожаловать в Dez Profi Tashkent</h2>
+        <p>Компания «Dez-Profi» в Ташкенте предлагает услуги по быстрому выполнению дезинсекции и дезинфекции с гарантией безукоризненного качества. Это предложение дополняет объективность тарификацией услуг и возможностью комплексной обработки помещений от разных видов вредителей. Мы формируем для своих клиентов индивидуальный подход, который позволяет нам решать любые вопросы максимально быстро и эффективно, с гарантией качества.</p>
+       
+        <a href="https://t.me/DDez_profi" target="_blank" class="consult-button">Получить консультацию</a>
+        
+    </div>
+    <div class="image-wrapper">
+        <img src="img/desinfekciia-vnytrenih-pomeshenii.jpg" alt="Dez Profi Tashkent">
+    </div>
+</section>
+
+
+<section id="about">
+    <div class="about-wrapper">
+        <h2>О нас</h2>
+        <p>Компания Dez Profi Tashkent специализируется на предоставлении услуг по дезинфекции уже более 5 лет. За 5 лет нашей работы более 2000 клиентов остались довольны результатом. Мы стремимся к тому, чтобы каждый клиент остался доволен качеством наших услуг. Наши специалисты проходят регулярное обучение, чтобы быть в курсе последних достижений в области дезинфекции и дезинсекции. Мы используем только проверенные и безопасные средства, чтобы гарантировать безопасность для здоровья людей и животных. Мы делаем все быстро, надёжно, с полной гарантией. Также, если после первой обработки не будет эффекта, повторную обработку мы проводим за счёт компании, то есть абсолютно бесплатно.</p>
+    </div>
+
+    <section id="licenses">
+        <h2>Наши лицензии и сертификаты</h2>
+        <div class="license-gallery">
+            <img src="img/лицензия 1.jpg" alt="Лицензия 1">
+            <img src="img/лицензия 2.jpg" alt="Лицензия 2">
+            <!-- Дополнительные лицензии -->
+        </div>
+    </section>
+
+    <section id="clients">
+        <h2>Мы работаем с физическими и юридическими лицами</h2>
+        <div class="client-wrapper">
+            <!-- Блок для физических лиц -->
+            <div class="client-block">
+                <img src="img/1875487.png" alt="Работа с физическими лицами">
+                <h3>Физические лица</h3>
+                <p>Мы предлагаем профессиональные услуги дезинфекции для частных лиц. Гарантируем полную безопасность и эффективность обработки ваших помещений.</p>
+            </div>
+            
+            <!-- Блок для юридических лиц -->
+            <div class="client-block">
+                <img src="img/65045.png" alt="Работа с юридическими лицами">
+                <h3>Юридические лица</h3>
+                <p>Мы сотрудничаем с компаниями и организациями, предоставляя комплексные решения по дезинфекции для офисов, предприятий и коммерческих объектов.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-company">
+        <h2>О компании <span class="highlight">в цифрах</span></h2>
+        <div class="stats">
+            <div class="stat">
+                <p><strong>6000</strong></p>
+                <p>довольных клиентов</p>
+            </div>
+            <div class="stat">
+                <p><strong>1500</strong></p>
+                <p>организаций и компаний на обслуживании</p>
+            </div>
+        </div>
+    </section>
+</section>
+    
+
+<section id="faq">
+    <h3>Часто задаваемые вопросы</h3>
+    <ul class="faq-list">
+        <li>
+            <button class="faq-question">Вопрос 1: Как быстро проводится дезинфекция?</button>
+            <p class="faq-answer">В зависимости от площади помещения, процесс может занимать от 1 до 4 часов.</p>
+        </li>
+        <li>
+            <button class="faq-question">Вопрос 2: Какими средствами вы пользуетесь?</button>
+            <p class="faq-answer">Мы используем только сертифицированные и безопасные для людей и животных средства.</p>
+        </li>
+        <li>
+            <button class="faq-question">Вопрос 3: Как долго держится эффект дезинфекции?</button>
+            <p class="faq-answer">Эффект может сохраняться до нескольких месяцев, в зависимости от условий эксплуатации помещения.</p>
+        </li>
+        <li>
+            <button class="faq-question">Вопрос 4: Есть ли гарантия на ваши услуги?</button>
+            <p class="faq-answer">Да, мы предоставляем 100% гарантию на все наши услуги.</p>
+        </li>
+        <li>
+            <button class="faq-question">Вопрос 5: Можно ли находиться в помещении во время обработки?</button>
+            <p class="faq-answer">Нет, во время обработки люди и животные должны покинуть помещение.</p>
+        </li>
+        <li>
+            <button class="faq-question">Вопрос 6: Какие объекты вы обслуживаете?</button>
+            <p class="faq-answer">Мы обслуживаем квартиры, загородные дома, коммерческие заведения и другие объекты.</p>
+        </li>
+        <li>
+            <button class="faq-question">Вопрос 7: Как подготовить помещение к дезинсекции?</button>
+            <p class="faq-answer">По возможности отодвинуть мебель от стены на 30–40 сантиметров, произвести влажную уборку и т.д.</p>
+        </li>
+        <li>
+            <button class="faq-question">Вопрос 8: Что ни в коем случае нельзя делать?</button>
+            <p class="faq-answer">Убирать, складывать, выносить куда-либо посуду вещи, книги и т.д. Так как вы можете эвакуировать на время обработки кутикулы тараканов, а затем вновь занести в помещение.</p>
+        </li>
+        <li>
+            <button class="faq-question">Вопрос 9: В какие дни вас можно вызвать?</button>
+            <p class="faq-answer">Наших специалистов можно вызвать в любой день недели. Хотя у нас есть возможности для срочного выезда, всё же точное время лучше согласовывать заранее.</p>
+        </li>
+    </ul>
+</section>
+
+<div class="reels-section">
+    <h2 class="reels-title">Видео с обьектов</h2>
+    <div class="reel">
+        <video src="mp3/IMG_3126.MOV" controls></video>
+    </div>
+    <div class="reel">
+        <video src="mp3/IMG_2463.MP4" controls></video>
+    </div>
+    <div class="reel">
+        <video src="mp3/IMG_2178.MP4" controls></video>
+    </div>
+</div>
+    
+<div class="features-container">
+    <div class="feature-box">
+        <h3>Гарантия цены</h3>
+        <p>Стоимость — строго по нашему прайс-листу. Цена не вырастет из-за высокой степени заражения.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Работа по договору</h3>
+        <p>Проводим обработку в удобное для вас время, заключаем договор. Юридическим лицам — документы для проверок.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Гарантия средства</h3>
+        <p>Клиент вправе знать о применяемых препаратах. Предоставляем о каждом полную информацию.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Контроль качества</h3>
+        <p>Отслеживаем результат по каждому заказу в течение 1 месяца. Делаем всё, что от нас зависит, чтобы победить вредителей.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Работаем 24/7</h3>
+        <p>Проводим обработку в любое удобное время для нашего клиента.</p>
+    </div>
+    <div class="feature-box">
+        <h3>Гарантия качества</h3>
+        <p>Даем 100% гарантию качества, если после первой обработки не будет эффекта, то вторая обработка идет бесплатно.</p>
+    </div>
+</div>
+
+
+
+
+   <!-- Секция Услуги -->
+  <!-- Секция Услуги -->
+<section id="services" class="services-section">
+    <div class="container">
+        <h2>Наши услуги</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Дезинфекция помещений</h3>
+                <p>Мы предлагаем комплексную дезинфекцию помещений, которая обеспечит защиту от вирусов, бактерий и грибов.</p>
+            </div>
+            <div class="service-item">
+                <h3>Борьба с грызунами</h3>
+                <p>Наши методы борьбы с грызунами гарантируют долгосрочный эффект и безопасность для ваших питомцев и детей.</p>
+            </div>
+            <div class="service-item">
+                <h3>Уничтожение насекомых</h3>
+                <p>Мы эффективно уничтожаем всех видов насекомых, включая клопов, тараканов и муравьев.</p>
+            </div>
+            <div class="service-item">
+                <h3>Уничтожение запахов</h3>
+                <p>Мы предлагаем услуги по устранению неприятных запахов с использованием современных технологий.</p>
+            </div>
+            <div class="service-item">
+                <h3>Обработка деревьев от вредителей</h3>
+                <p>Мы используем профессиональные средства для защиты деревьев от вредителей, обеспечивая их здоровье и долголетие.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="articles">
+    <h2>Полезные статьи по дезинфекции</h2>
+    
+    <div class="article-card">
+        <img src="img/1.png" alt="Преимущества регулярной дезинфекции">
+        <h3>Преимущества регулярной дезинфекции</h3>
+        <p>Регулярная дезинфекция помогает предотвратить распространение инфекций, создавая здоровую и безопасную среду для работы и проживания. Подробнее...</p>
+        <a href="article1.html" class="read-more">Читать далее</a>
+    </div>
+
+    <div class="article-card">
+        <img src="img/2.avif" alt="Как работает озонатор и для чего он нужен?">
+        <h3>Как работает озонатор и для чего он нужен?</h3>
+        <p>Озонатор эффективно очищает воздух от вирусов и бактерий. В статье раскрываем, как он работает и почему его стоит использовать дома и на работе...</p>
+        <a href="article2.html" class="read-more">Читать далее</a>
+    </div>
+
+    <div class="article-card">
+        <img src="img/4.png" alt="Антибактериальная уборка: Зачем она нужна?">
+        <h3>Антибактериальная уборка: Зачем она нужна?</h3>
+        <p>Антибактериальная уборка помогает избежать заболеваний, особенно в сезоны гриппа и простуды. В этой статье рассказываем, как она проводится...</p>
+        <a href="article3.html" class="read-more">Читать далее</a>
+    </div>
+
+    <div class="article-card">
+        <img src="img/3.avif" alt="Дезинфекция офисных помещений">
+        <h3>Дезинфекция офисных помещений</h3>
+        <p>Офисные помещения являются местом большого скопления людей, что увеличивает риск распространения инфекций. Узнайте о лучших способах защиты...</p>
+        <a href="article4.html" class="read-more">Читать далее</a>
+    </div>
+
+</section>
+
+
+<section id="testimonials">
+    <h2>Отзывы наших клиентов</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial-slide">
+            <p>«Отличный сервис, быстро и качественно. Рекомендую!»</p>
+            <span>— Алексей, Ташкент</span>
+        </div>
+        <div class="testimonial-slide">
+            <p>«Пользуюсь услугами Dez Profi уже несколько лет. Всегда доволен результатом.»</p>
+            <span>— Умид, Ташкент</span>
+        </div>
+        <div class="testimonial-slide">
+            <p>«Профессионалы своего дела, все сделали на высшем уровне!»</p>
+            <span>— Ирина, Ташкент</span>
+        </div>
+        <div class="testimonial-slide">
+            <p>«Заботятся о своих клиентах, все сделали быстро и качественно.»</p>
+            <span>— Гульнора, Ташкент</span>
+        </div>
+        <div class="testimonial-slide">
+            <p>«Очень доволен работой, рекомендую всем!»</p>
+            <span>— Владислав, Ташкент</span>
+        </div>
+        <div class="testimonial-slide">
+            <p>«Лучший сервис в городе, рекомендую!»</p>
+            <span>— Георгий, Ташкент</span>
+        </div>
+    </div>
+    <button class="prev">❮</button>
+    <button class="next">❯</button>
+</section>
+
+
+    <section id="office-location" class="office-section">
+        <h2>Наш Офис</h2>
+        <div class="office-info">
+            <p>Мы находимся в самом центре города, чтобы вам было удобно нас найти. Наш офис предоставляет профессиональные консультации и услуги по дезинфекции и дезинсекции. Мы всегда рады нашим клиентам и готовы ответить на все ваши вопросы.</p>
+            <p><strong>Адрес:</strong> г. Ташкент, Яшнабадский район, 3 квартал, 41 дом </p>
+            <p><strong>Телефон:</strong> +998 (93) 411-21-52</p>
+            <p><strong>Часы работы:</strong> ПН-ВС с 10:00 до 19:00</p>
+        </div>
+    
+        <button id="toggleMapButton" class="cta-button">Показать карту</button>
+        <div id="mapContainer" class="map-container" style="display: none;">
+            <iframe
+         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52081.007599742574!2d69.28861891942181!3d41.276644303215015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef57d146f4803%3A0x72f4619de5ab1ede!2z0K_RiNC90LDQsdCw0LTRgdC60LjQuSDRgNCw0LnQvtC9LCDQotCw0YjQutC10L3Rgiwg0KLQsNGI0LrQtdC90YLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KPQt9Cx0LXQutC40YHRgtCw0L0!5e0!3m2!1sru!2s!4v1730867377952!5m2!1sru!2s" 
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+        </div>
+    </section>
+    
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Телефон: <a href="tel:+998936537797"> +998 93 411 21 52 </a></p>
+        <p>Телефон: <a href="tel:+998936537797">  +998 93 653 77 97</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/dez_profi_tashkent?igsh=NzR1cDlkMWVkdnZi&utm_source=qr/">@dez_profi_tashkent</a></p>
+        <p>Telegram: <a hrf="https://t.me/dezenfeksiya_uzb">@dez_profi_tashkent</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/share/CpfHiHo6NfdbRd8f/?mibextid=LQQJ4d">@dez_profi_tashkent</a></p>
+    
+        <div class="contact-image-wrapper">
+            <img src="img/medium-shot-man-with-goggles-mask_23-2148926602.jpg" alt="Контакты">
+            <div class="contact-overlay">
+                <p>Свяжитесь с нами по номеру 
+                    +998 93 411 21 52</p>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Dez Profi Tashkent</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/dez_profi_tashkent?igsh=NzR1cDlkMWVkdnZi&utm_source=qr"><img src="img/Vector (2).png" alt="Instagram"></a>
+            <a href="https://t.me/dezenfeksiya_uzb"><img src="img/Vector.png" alt="Telegram"></a>
+            <a href="https://www.facebook.com/share/CpfHiHo6NfdbRd8f/?mibextid=LQQJ4d"><img src="img/Vector (1).png" alt="Facebook"></a>
+        </div>
+    </footer>
+
+<!-- JavaScript для анимации -->
+<script src="scripts.js"></script>
+
+</body>
+</html>
